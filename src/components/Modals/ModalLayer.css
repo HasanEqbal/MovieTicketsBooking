@@ -1,0 +1,26 @@
+.modal-dialog{
+    max-width: 80%
+}
+.movie-details{
+    flex-direction: column;
+}
+
+.movie-timings{
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.movie-timings .list-group-horizontal {
+    overflow-x: scroll;
+}
+
+.show-grid{
+
+}
+
+.show-timings{
+    flex-direction: column;
+}
+
+h6{
+    margin-top: 10px;
+}

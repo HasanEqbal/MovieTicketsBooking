@@ -1,0 +1,9 @@
+.carouselContainer {
+    width: 77%;
+    margin-left: 11.5%;
+    margin-top: 1%
+   }
+   
+   .carousel-control-next-icon, .carousel-control-prev-icon {
+       background-color: red;
+   }

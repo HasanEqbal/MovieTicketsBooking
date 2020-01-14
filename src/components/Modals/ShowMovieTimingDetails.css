@@ -1,0 +1,13 @@
+.theatre_name{
+    font-size: 14px;
+    margin: 10px;
+    
+}
+
+.movie_timings{
+font-size: 12px;
+}
+
+.list-group-item{
+ width: 80px !important;
+}

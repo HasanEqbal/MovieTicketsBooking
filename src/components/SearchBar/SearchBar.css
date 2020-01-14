@@ -1,0 +1,14 @@
+.primaryheader{
+    height: 65px;
+    background: #333545;
+    padding: 0 10px
+}
+
+.headerinner{
+    color: #000000 ¡important;
+    margin: 0px 90px !important;
+}
+
+.right {
+    float: right;
+}
