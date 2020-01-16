@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Home from './HomePage/HomePage'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
+import Checkout from './checkout/Checkout'
 import createHistory from '../history';
 import ViewAll from './ViewAll/Viewall';
 import { searchMovies } from '../action';
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/viewall" exact component={ViewAll} />
           <Route path="/search/:id" exact component={SearchPage} />
+          <Route path="/checkout" exact component={Checkout} />
         </Switch>
         <Footer />
       </Router>

@@ -8,6 +8,7 @@ import App from './components/App';
 
 const storeInstance = Store();
 
+
 ReactDOM.render(
     <Provider store={storeInstance}>
         <App />

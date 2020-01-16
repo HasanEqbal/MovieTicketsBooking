@@ -1,0 +1,62 @@
+.checkout{
+    width: 80%;
+    margin-left: 25%;
+}
+
+.chckout-col{
+    max-width: 35%
+}
+
+.order-summary{
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #c02c39;
+}
+
+.tickcat{
+    color: #1f2533;
+    font-size: 13px;
+    font-family: Roboto,sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.__seat-type{
+
+}
+
+.amount{
+    float: right;
+
+}
+.screen-details{
+    color: #969696;
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+
+.txt_brkp{
+    font-size: 12px!important;
+    color: #1f2533;
+}
+
+._total-section{
+    border-top: 1px dotted #ccc;
+    margin-top: 15px;
+    color: #000;
+    font-size: 14px;
+}
+
+.summarywrap{
+    margin-top: 15px;
+    color: #000;
+    font-size: 14px;
+    background-color: #fffcdc;
+    min-height: 30px;
+}

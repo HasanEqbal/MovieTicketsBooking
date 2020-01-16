@@ -6,6 +6,7 @@
 
 .movie_timings{
 font-size: 12px;
+overflow-x: scroll;
 }
 
 .list-group-item{

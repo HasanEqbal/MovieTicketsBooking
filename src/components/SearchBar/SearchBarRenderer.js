@@ -24,7 +24,7 @@ function SearchBar() {
                     <img src={logo} alt="img" style={{ width: '155px', height: '40px' }}></img>
                 </Navbar.Brand>
                 <Form inline onSubmit={(e) => { handleSearchSubmit(e) }}>
-                    <FormControl href="/search/:id" type="text" onChange={(e) => { handleSearchInputChanges(e) }} placeholder={searchValue} className="mr-sm-2" style={{ width: '550px' }} />
+                    <FormControl type="text" onChange={(e) => { handleSearchInputChanges(e) }} placeholder={searchValue} className="mr-sm-2" style={{ width: '550px' }} />
                     <Button type="submit" variant="outline-info">Search</Button>
                 </Form>
                 <Nav className="mr-auto right">

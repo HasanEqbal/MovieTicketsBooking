@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import { Card, CardDeck, Button, ButtonToolbar } from 'react-bootstrap';
 import './MovieThubnail.css';
 import ModalLayer from '../Modals/ModalLayer';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import loadingIndicator from '../../../src/ajax-loader.gif';
 import defaultImg from '../../../src/default-img.jpg';
+import { selectedMovieDetails } from '../../action';
 
 function MovieThubnails(props) {
     let { movieThubnails, searchedKey } = props
     const [modalShow, setModalShow] = useState(false);
     const [clickedIndex, setClickedIndex] = useState(0);
-
 
     return (
         <div>
@@ -21,13 +22,13 @@ function MovieThubnails(props) {
 
                         return (
                             < Card key={index}>
-                                <Card.Img variant="top" src={item.Poster === 'N/A' ? defaultImg: item.Poster } />
+                                <Card.Img variant="top" src={item.Poster === 'N/A' ? defaultImg : item.Poster} />
                                 <Card.Body className="censor">
                                     <span>{item.Title}</span><br></br>
                                     <span>U A | Action |English</span>
                                     < div className="book-tickets" >
                                         <ButtonToolbar>
-                                            <Button variant="primary" onClick={() => { setModalShow(true); setClickedIndex(index) }}>BOOK TICKETS</Button>
+                                            <Button variant="primary" onClick={() => { setModalShow(true); setClickedIndex(index); props.selectedMovieDetails(movieThubnails[clickedIndex]) }}>BOOK TICKETS</Button>
                                         </ButtonToolbar>
                                     </div>
                                 </ Card.Body >
@@ -44,7 +45,10 @@ function MovieThubnails(props) {
 }
 
 
+const mapDispatchToProps = dispatch => ({
+    selectedMovieDetails: movieDetails => dispatch(selectedMovieDetails(movieDetails))
+});
 
+export default connect(null, mapDispatchToProps)(MovieThubnails)
 
-export default MovieThubnails
 

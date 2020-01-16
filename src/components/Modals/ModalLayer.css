@@ -1,5 +1,5 @@
 .modal-dialog{
-    max-width: 80%
+    max-width: 70%
 }
 .movie-details{
     flex-direction: column;
@@ -23,4 +23,8 @@
 
 h6{
     margin-top: 10px;
+}
+
+.shows-display{
+    overflow: scroll; 
 }
